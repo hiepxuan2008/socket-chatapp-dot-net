@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0B1383C8-238E-4C1C-8DA9-BDD643CE1C20}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Client</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ChatStruct\ChatControl.cpp" />
+    <ClCompile Include="..\ChatStruct\ChatStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\LoginNotificationStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\LoginStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\LogoutNotificationStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\PrivateFileStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\PrivateMessageStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\PublicMessageStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\RequestSendFileStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\ResponseLoginStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\ResponseSendFileStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\ResponseSignupStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\SignupStruct.cpp" />
+    <ClCompile Include="..\ChatStruct\UserStatusStruct.cpp" />
+    <ClCompile Include="AppSocket.cpp" />
+    <ClCompile Include="LoginScreen.cpp" />
+    <ClCompile Include="AppController.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainScreen.cpp" />
+    <ClCompile Include="PrivateChat.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ChatStruct\ChatControl.h" />
+    <ClInclude Include="..\ChatStruct\ChatStruct.h" />
+    <ClInclude Include="..\ChatStruct\IncludeAll.h" />
+    <ClInclude Include="..\ChatStruct\LoginNotificationStruct.h" />
+    <ClInclude Include="..\ChatStruct\LoginStruct.h" />
+    <ClInclude Include="..\ChatStruct\LogoutNotificationStruct.h" />
+    <ClInclude Include="..\ChatStruct\PrivateFileStruct.h" />
+    <ClInclude Include="..\ChatStruct\PrivateMessageStruct.h" />
+    <ClInclude Include="..\ChatStruct\PublicMessageStruct.h" />
+    <ClInclude Include="..\ChatStruct\RequestSendFileStruct.h" />
+    <ClInclude Include="..\ChatStruct\ResponseLoginStruct.h" />
+    <ClInclude Include="..\ChatStruct\ResponseSendFileStruct.h" />
+    <ClInclude Include="..\ChatStruct\ResponseSignupStruct.h" />
+    <ClInclude Include="..\ChatStruct\SignupStruct.h" />
+    <ClInclude Include="..\ChatStruct\UserStatusStruct.h" />
+    <ClInclude Include="AppSocket.h" />
+    <ClInclude Include="LoginScreen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AppController.h" />
+    <ClInclude Include="MainScreen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PrivateChat.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PrivateChatInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LoginScreen.resx">
+      <DependentUpon>LoginScreen.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrivateChat.resx">
+      <DependentUpon>PrivateChat.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

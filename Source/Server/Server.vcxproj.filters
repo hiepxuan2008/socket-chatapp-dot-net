@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\ChatStruct">
+      <UniqueIdentifier>{ad08b918-7c74-4bc1-87cb-cfdc013c7b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\ChatControl.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\ChatStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\LoginStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\ResponseLoginStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\PrivateFileStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\PrivateMessageStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\PublicMessageStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\RequestSendFileStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\ResponseSendFileStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\ResponseSignupStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\SignupStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\UserStatusStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\LoginNotificationStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ChatStruct\LogoutNotificationStruct.cpp">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\ChatControl.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\ChatStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\IncludeAll.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\LoginStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\ResponseLoginStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerController.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\PrivateFileStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\PrivateMessageStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\PublicMessageStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\RequestSendFileStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\ResponseSendFileStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\ResponseSignupStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\SignupStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\UserStatusStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\LoginNotificationStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ChatStruct\LogoutNotificationStruct.h">
+      <Filter>Resource Files\ChatStruct</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainScreen.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
